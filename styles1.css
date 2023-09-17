@@ -52,7 +52,7 @@ p {
 
 
 .button-container button:hover {
-    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background on hover */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 
