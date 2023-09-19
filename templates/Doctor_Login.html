@@ -1,0 +1,15 @@
+<html><head>
+  <title>Login</title>
+</head>
+<body>
+  <h3>Welcome Doc! Login to continue</h3>
+  <form action="http://127.0.0.1:8000/Doctor/Validate" method="post">
+    {% csrf_token %}
+    <label for="doc_id">ID:</label>
+    <input type="text" id="doc_id" name="doc_id"><br><br>
+    <label for="password">Password:</label>
+    <input type="text" id="password" name="password"><br><br>
+    <input type="submit" value="Submit">
+  </form> 
+</body>
+</html>
