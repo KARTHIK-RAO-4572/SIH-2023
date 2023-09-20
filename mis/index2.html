@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Video Stream</title>
+</head>
+<body>
+    <h1>Live Video Stream</h1>
+    <video id="liveVideo" controls autoplay></video>
+
+    <script>
+        const videoElement = document.getElementById('liveVideo');
+        const streamUrl = 'https://youtu.be/PHIFmYLR4XE?si=qCzF-cG_efGxHAfJ'; // Replace with the actual URL
+
+        videoElement.src = streamUrl;
+    </script>
+</body>
+</html>

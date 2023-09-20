@@ -1,6 +1,6 @@
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(''); 
     background-color: #CAEDFF;
     background-size: cover;
     background-position: center;
@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
 }
@@ -16,43 +16,106 @@ body {
 .container {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8); 
-    padding: 20px;
+    padding-top: 10px;
     border-radius: 10px;
-    height: 90%;
-    width: 90%;
+    height: 500px;
+    width: 100%;
+    padding-bottom: 70px;
+    align-items: center;
+
 }
 
 h1 {
-    color: #333;
+    color: black;
+    background-color: #00796b;
+    
+    margin: 0rem;
+    text-align: center;
+    height: 100px;
+
 }
 
 p {
     color: #555;
 }
 
-.button-container {
-    margin-top: 20px;
+header{
+    display: flex;
+    background-color: #00796b;
+    height: 100px;
+    width: 100%;
+    
+    }
+header img {
+    height: 100px;
 }
+
+
+
 
 .button-container button {
     background-color: #8ECDDD;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: none;
+    border: solid;
     padding: 100px 80px;
     font-size: 50px;
     color: black;
     margin: 10px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 90px;
     transition:  0.3s ease-in-out;
-    
+   
 }
 
 
 .button-container button:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #00000080;
+    box-shadow: 5px 10px;
+
+}
+
+.doctor-button button:hover{
+    background-image: url(doctor.avif);
+
+}
+
+
+
+
+
+.lan{
+    width: 100%;
+    background-color: bisque;
+    height: 20%;
+    padding-top: 15px;
+    margin-right: 0%;
+}
+
+.lan ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 20px;
+    
+}
+.lan ul li{
+    margin: 50px;
+}
+
+.lan a {
+    text-decoration: none;
+    color: red;
+}
+
+.lan a:hover{
+    color: green;
+}
+
+.chlan{
+    align-items: center;
 }
 
 
