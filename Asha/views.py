@@ -21,3 +21,5 @@ def Login(request):
             return render(request,"Wrong_Details_ASHA.html")
     except(models.Asha_Info.DoesNotExist):
         return render(request,"Wrong_Details_ASHA.html")
+    
+    

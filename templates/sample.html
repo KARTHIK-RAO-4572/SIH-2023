@@ -1,0 +1,13 @@
+<html>
+<head></head>
+<body>
+<video id="liveVideo" controls autoplay></video>
+
+    <script>
+        const videoElement = document.getElementById('liveVideo');
+        const streamUrl = 'http://192.168.29.:8080'; // Replace with the actual URL
+
+        videoElement.src = streamUrl;
+    </script>
+</body>
+</html>
