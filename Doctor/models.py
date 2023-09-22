@@ -1,7 +1,7 @@
 from typing import Any
 from django.db import models
 class Doctor_Info(models.Model):
-    doc_id = models.IntegerField(primary_key=True,max_length=5)
+    doc_id = models.IntegerField(primary_key=True)
     doc_pass = models.TextField()
     doc_name = models.TextField(editable=True)
     doc_gender = models.CharField(choices=[('M','Male'),('F','Female')],max_length=1)

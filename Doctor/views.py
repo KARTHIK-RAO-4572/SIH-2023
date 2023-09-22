@@ -11,10 +11,10 @@ def Login(request):
     try:
         record = models.Doctor_Info.objects.get(doc_id=ID)
         if(record.doc_pass == passw):
-            return HttpResponseRedirect("http://127.0.0.1:8000/Doctor/dashboard"+"?"+str(ID))
+            return render(request,"Doctor_dash.html")
         else:
-            return HttpResponse("Wrong bro")
-    except(DoesNotExist):
-        return HttpResponse("Wrong password")
+            return render(request,"Wrong_Details_doc.html")
+    except(models.Doctor_Info.DoesNotExist):
+        return render(request,"Wrong_Details_doc.html")
     
 

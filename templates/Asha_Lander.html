@@ -112,14 +112,14 @@
 <body>
     <div class="welcome-container">
         
-        <h1 class="welcome-heading">Welcome Doctor!</h1>
+        <h1 class="welcome-heading">Welcome Volunteer !</h1>
         <img class="image" src="https://img.freepik.com/free-vector/doctor-background-design_1270-62.jpg?w=2000" alt="">
         <p class="welcome-subheading">Login Details Please!</p>
-        <form action="http://127.0.0.1:8000/Doctor/Validate" method="post">
+        <form action="http://127.0.0.1:8000/Asha/Validate" method="post">
             {% csrf_token %}
             <div class="input-group">
-                <label for="username">Doctor ID:</label>
-                <input type="text" id="doc_id" name="doc_id" required>
+                <label for="username">Phone Number:</label>
+                <input type="text" id="phon" name="phon" required>
             </div>
             <div class="input-group">
                 <label for="password">Password:</label>
