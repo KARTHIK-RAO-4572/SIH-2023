@@ -1,12 +1,50 @@
 body{
-    background-color: rgb(241, 248, 248);
+    background-color: rgb(50, 121, 121);
     
+}
+.beautiful-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Background color */
+    color: #fff; /* Text color */
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+/* Hover effect - change background color */
+.beautiful-button:hover {
+    background-color: #0056b3; /* New background color on hover */
+}
+
+/* Additional styles to make it beautiful */
+.beautiful-button.gradient {
+    background: linear-gradient(to bottom, #007BFF, #0056b3); /* Gradient background */
+}
+
+.beautiful-button.rounded {
+    border-radius: 30px; /* Rounded corners */
+}
+
+.beautiful-button.shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.beautiful-button.icon {
+    background-image: url('icon.png'); /* Add an icon */
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-left: 40px; /* Adjust for icon size */
 }
 
 .circular_image{
-    margin-left:500px;
-    width: 250px; 
-    height: 250px; 
+    margin-top:3%;
+    margin-left:550px;
+    width: 200px; 
+    height: 200px; 
     border-radius: 50%;
 }
 
@@ -18,15 +56,11 @@ body{
        
     }
 
-.label{
-    position: relative; 
-        top : 90px;
-        left: -325px;
-}
+
 .move_left2{
     position: relative; 
         top : 150px;
-        left: -585px;
+        left: -275px;
 }
 
 * {
@@ -78,7 +112,7 @@ a{
     margin:5px auto;
     -webkit-transition:all 0.3s ease-in-out;
     transition:all 0.3s ease-in-out;
-    background-color: white;
+    background-color: rgb(172, 61, 61);
 }
 
 @media(max-width:768px){
