@@ -16,7 +16,8 @@ def Login(request):
                 "village":record.village
 
             }
-            return render(request,"Asha_dashboard.html",content)
+
+            return render(request,"Asha_dashboard.html",content,)
         else:
             return render(request,"Wrong_Details_ASHA.html")
     except(models.Asha_Info.DoesNotExist):

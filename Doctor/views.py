@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse,HttpResponseRedirect
 from . import models
+import pyttsx3
 
 def Doctor_Lander(request):
     return render(request,'Doctor_Login.html')

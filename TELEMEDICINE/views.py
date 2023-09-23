@@ -1,16 +1,23 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+import pyttsx3
 
 def Lander(request,lang='en'):
     if(lang=='en'):
         content = {
             'govt_name':'Goverment of Kerala',
             'kiosk_name':' Welcome to AI assisted Tele Medicine Kiosk !',
-            'type_text':'please select type of user',
+            'type_text':'please select your role to continue',
             'citizen_text':'Citizen',
             'doctor_text':'Doctor'
         }
 
+        obj1 = pyttsx3.init()
+        obj1.setProperty('voice', 'en-UK')
+        obj1.setProperty("rate", 155)
+        obj1.say("Welcome to AI assisted telemdicine kiosk !")
+        obj1.say("Please select your role to continue")
+        obj1.runAndWait()
         return render(request,'Lander_Page.html',content)
     if(lang=='tel'):
         content = {

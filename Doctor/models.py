@@ -17,3 +17,10 @@ class Doctor_Activity(models.Model):
     doc_SO = models.DateTimeField()
     doc_att = models.IntegerField()
 
+class Assign_Asha(models.Model):
+    patient = models.TextField()
+    phone_patient = models.BigIntegerField()
+    village = models.TextField()
+    prescription = models.TextField()
+    status = models.TextField()
+
